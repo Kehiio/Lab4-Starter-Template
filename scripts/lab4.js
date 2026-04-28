@@ -11,7 +11,8 @@ function sumValues(num1, num2, add) {
 
         result = Number(num1) + Number(num2);
 
-        if (result == NaN )
+        // check for NaN
+        if (Number.isNaN(result))
         {
             return false;
         }
